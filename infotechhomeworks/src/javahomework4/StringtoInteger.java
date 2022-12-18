@@ -10,8 +10,6 @@ public class StringtoInteger {
 		
 		
 		
-		
-		
 		int i3= 123456;
 		
 		String str2 = String.valueOf(i3);
