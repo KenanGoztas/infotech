@@ -28,7 +28,7 @@ public class Soru5 {
 			System.out.println("parolanın son harfi Küçük olmalı, lütfen yeni bir sifre girin");
 			continue;
 		}
-		if(password.length()!=8) {
+		if(password.length()<8) {
 			System.out.println("parola 8 karakterden oluşmalı, lütfen yeni bir sifre girin.");
 			continue;
 		}

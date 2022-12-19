@@ -14,10 +14,12 @@ harfi iceriyor” - isim “Z” harfi iceriyorsa “Girdiginiz isim Z harfi ice
 		Scanner input= new Scanner(System.in);
 		System.out.println("lütfen bir isim giriniz");
 		String name= input.nextLine();
-		if(name.contains("a"))
+		if(name.contains("a")) {
 			System.out.println("Girdiğiniz isim a harfi içeriyor");
-		else if(name.contains("Z"))
+		}
+		else if(name.contains("Z")) {
 			System.out.println("Girdiğiniz isim Z harfi içeriyor");
+		}
 		else
 			System.out.println("Girdiğiniz isim a ve Z harfi içermiyor");
 

@@ -13,9 +13,10 @@ public class Soru1 {
         System.out.println(str2);
         String str3= str2.trim();//trim ile baş ve sondaki boşlukları çıkardım.
         System.out.println(str3);
-        String str4= str3.substring(0, str3.length()-1);//substring ile son harfe kadar olan kısmı aldım
+        //String str4= str3.substring(0, str3.length()-1);//substring ile son harfe kadar olan kısmı aldım
+        String str4 = str3.replace("@", ".");
         String str5= str4.replace("C", "c");
-        System.out.println(str5 + ".");
+        System.out.println(str5);
 
     }
 }
