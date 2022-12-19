@@ -16,7 +16,7 @@ public class Soru5 {
 		- Sifre uzunlugu en az 8 karakter olmali
 		*/
 		
-		System.out.println("Lütfen ilk harfi büyük, son harfi küçük, 8 karakterden oluşan bir şifre giriniz");
+		System.out.println("Lütfen ilk harfi büyük, son harfi küçük, 8 karakterden oluşan, boşluk içermeyen bir şifre giriniz");
 		while(true) {
 		Scanner input = new Scanner(System.in);
 		String password= input.nextLine();
@@ -29,7 +29,11 @@ public class Soru5 {
 			continue;
 		}
 		if(password.length()!=8) {
-			System.out.println("parola 8 karakterden oluşmalı, lütfen yeni bir sifre girin");
+			System.out.println("parola 8 karakterden oluşmalı, lütfen yeni bir sifre girin.");
+			continue;
+		}
+		if(password.contains(" ")) {
+			System.out.println("parolada boşluk olmamalı,lütfen yeni bir şifre girin.");
 			continue;
 		}
 		System.out.println("password doğru girildi : " + password);
