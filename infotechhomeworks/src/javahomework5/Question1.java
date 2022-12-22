@@ -19,33 +19,31 @@ public class Question1 {
 		
 		System.out.println("Lütfen e-mail hesabınızı giriniz");
 		
-		while(true) {
-			String str = input.nextLine();
-			if(!str.contains("@")) {
-				System.out.println("geçersiz email, tekrar giriniz");
-				continue;
-			}
-			if(!str.contains("@gmail")) {
-				System.out.println("lütfen gmail adresinizi girin, tekrar giriniz");
-				continue;
-			}
-			if(!str.contains("@gmail.com")) {
-				System.out.println("Yazımda bir sorun var, maili kontrol ediniz. Tekrar giriniz");
-				continue;
-			}
-			System.out.println("emailinizi başarı ile girdiniz!");
-			break;
-			
-		}
+		String s = input.nextLine();
 		
-		
-		
-		
-		
-		
-		
-		
+		mailGir(s);
+				
 		
 	}
+	
+	
+	public static void mailGir(String str) {
+		
+			if(!str.contains("@")) {
+				System.out.println("geçersiz email, tekrar giriniz");	
+			}
+			else if(!str.contains("@gmail")) {
+				System.out.println("lütfen gmail adresinizi girin, tekrar giriniz");	
+			}
+			else if(!str.contains("@gmail.com")) {
+				System.out.println("Yazımda bir sorun var, maili kontrol ediniz. Tekrar giriniz");	
+			}
+			else
+			System.out.println("emailinizi başarı ile girdiniz!");
+	
+	}
+			
+			
+			
 
 }
