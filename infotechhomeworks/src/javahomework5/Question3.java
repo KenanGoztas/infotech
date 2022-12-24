@@ -21,6 +21,7 @@ public class Question3 {
 		int result= exponentialNumbers(number, power);
 		
 		System.out.println(result);
+		
 	
 
 	}

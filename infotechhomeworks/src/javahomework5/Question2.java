@@ -22,16 +22,28 @@ public class Question2 {
 //				\\S+ Birden fazla white space karakter harici karakterler
 //	[A-Za-z]    [^A-Za-z]
 //   [a-z] küçük harfler dışındaki karakterler. Tersi [^a-z]
-//  [A-Za-z0-9-_]	harf ve rakam dışındaki karakterler. Tersi[^A-Za-z0-9-_]
+//  [A-Za-z0-9]	harf ve rakam dışındaki karakterler. Tersi[^A-Za-z0-9-_]
 		
 		// [^[a-z]]
 		
 		Scanner input= new Scanner(System.in);
+		System.out.println("lütfen birşeyler yazınız");
+		String str3= input.nextLine();
+		karakterSay(str3); 
+
 		String str1 = "InfotechAcademy1234...!’^.+";
+		
+		String str2 ="amalyayliay34325>=>";
+		
+		
 		karakterSay(str1);
-//		karakterSay(input.nextLine()); //kullanıcıdan giriş yapılınca çalışmıyor??
 		
+		System.out.println();
 		
+		karakterSay(str2);
+		System.out.println("*******");
+	
+			
 	}
 	
 	public static void karakterSay(String str) {
@@ -47,24 +59,11 @@ public class Question2 {
 		System.out.println(karakter+ " "+ karakter.length() + " özel karakter var" );
 		
 		
-		
-//		String yeni = str.replaceAll("[^A-Za-z0-9]", "");
-//		System.out.println(yeni);
-//		
-		
-		
-		
-
+		String yeni = str.replaceAll("[^A-Za-z0-9]", "");
+		System.out.println(yeni);
 		
 	}
 	
 	
 	
-	
-	
-	
-	
-	
-	
-
 }

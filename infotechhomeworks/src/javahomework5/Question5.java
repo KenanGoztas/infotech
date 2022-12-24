@@ -19,8 +19,10 @@ public class Question5 {
 		System.out.println("Bitiş değerini giriniz!");
 		int bitis = input.nextInt();
 		
-		while(!(baslangıc==bitis+1)) {
+		while(baslangıc<=bitis) {
+			
 			if(baslangıc%2==0)
+				
 			System.out.println(baslangıc);
 			
 		baslangıc++;	
